@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <style>
+    body {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+    .login-container {
+      width: 300px;
+      height: 500px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(33, 37, 41, 0.2); /* 20% opacity */
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+    }
+    .login-container form {
+      width: 80%;
+    }
+    .login-container h2 {
+      color: #ffeeb7;
+      text-align: center;
+      
+    }
+    .login-container label {
+      color: #fff;
+    }
+    .form-control {
+      background-color: transparent; /* Transparent input background */
+      border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+      color: #fff; /* Text color */
+    }
+    .btn-primary {
+      background-color: transparent; /* Transparent button background */
+      border-color: #ffffff; /* White border color */
+      color: #ffffff; /* White text color */
+    }
+    .btn-primary:hover {
+      background-color: rgba(255, 255, 255, 0.2); 
+      border-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 login-container">
+        <form>
+          <h2><i class="far fa-user fa-3x"></i></h2>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="login()">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script>
+    function login() {
+      window.location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>
